@@ -1,0 +1,3 @@
+[submodule "Libraries/ioLibrary_Driver"]
+	path = Libraries/ioLibrary_Driver
+	url = git@github.com:Wiznet/ioLibrary_Driver.git
