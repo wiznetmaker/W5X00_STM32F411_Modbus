@@ -166,7 +166,7 @@ int main(void)
     switch(state)
     {
         case SOCK_INIT:
-            //listen(sock); //Function call Immediately after socket open operation
+            listen(SOCKET_MODBUS);
             break;
         
         case SOCK_LISTEN:
@@ -203,6 +203,7 @@ int main(void)
             break;
 
         case SOCK_CLOSE_WAIT:
+            disconnect(SOCKET_MODBUS);
             break;
         
         case SOCK_FIN_WAIT:
